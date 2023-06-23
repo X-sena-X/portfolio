@@ -1,0 +1,19 @@
+.ProjectContainer{
+    height: 330px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.ProjectContainer:hover .model{
+    position:absolute;
+    display: flex;
+    background: transparent;
+} 
+
+.ProjectContainer:hover .Container2 img{
+    opacity: 0.5;
+}
+.model{
+    height: 330px;
+    width: 350px;
+}

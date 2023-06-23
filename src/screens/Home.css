@@ -1,0 +1,32 @@
+.MainContainer{
+    display: flex;
+    width: calc(100vh - 150px)px;
+    overflow-x: hidden;
+    
+}
+
+.Section2{
+    margin-top:55vh;
+    white-space: initial;
+  
+    align-self: center;
+}
+
+.Section2 .Section2TextBox{
+    width:950px;
+    align-self: center;
+    
+}
+
+.Section3{
+    height: 100vh;
+}
+.TimeLineContainer{
+    height: calc(100vh-450px)px;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+#MagicWall{
+    margin-left: 10px;
+}

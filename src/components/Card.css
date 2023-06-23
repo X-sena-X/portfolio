@@ -1,0 +1,14 @@
+
+.cards{
+    left:0;
+    width: 500px;
+    height: 27vh;
+    display: grid;
+    grid-template-columns: 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+    border-radius: 30px;
+    background: rgb(169, 115, 209);
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+  }
