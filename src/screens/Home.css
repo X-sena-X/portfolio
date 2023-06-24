@@ -2,6 +2,7 @@
     display: flex;
     width: calc(100vh - 150px)px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     
 }
 
@@ -18,15 +19,33 @@
     
 }
 
+
 .Section3{
-    height: 100vh;
+    height: 120vh;
 }
 .TimeLineContainer{
     height: calc(100vh-450px)px;
     scroll-behavior: smooth;
-    overflow-y: auto;
+    
+}
+.Section4{
+    height: max-content;
+}
+#MagicWall{
+    height: max-content;
+    
+}
+.tagCanvas{
+    width: 700px;
 }
 
-#MagicWall{
-    margin-left: 10px;
+
+@media only screen and (max-width: 800px){
+    .tagCanvas{
+        display: none;
+    }
+}
+
+.Section5{
+    background-color: black;
 }

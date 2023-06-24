@@ -3,27 +3,23 @@ import { useEffect } from 'react';
 const skills = [
     { href:"#" , title: "HTML"},
     { href:"#" , title: "CSS"},
-    { href:"#" , title: "ES5"},
+    { href:"#" , title: "ReactJS"},
     { href:"#" , title: "TypeScript"},
-    { href:"#" , title: "REST"},
-    { href:"#" , title: "JSON"},
     { href:"#" , title: "GSAP"},
-    { href:"#" , title: "Data Science"},
-    { href:"#" , title: "Wordpress"},
-    { href:"#" , title: "PHP"},
     { href:"#" , title: "Python"},
-    { href:"#" , title: "Node JS"},
+    { href:"#" , title: "Express Js"},
     { href:"#" , title: "Git"},
-    { href:"#" , title: "_lodash"},
-    { href:"#" , title: "SASS"},
     { href:"#" , title: "JQuery"},
-    { href:"#" , title: "SQI"},
-    { href:"#" , title: "Gulp"},
-    { href:"#" , title: "npm"},
-    { href:"#" , title: "BEM"}
+    { href:"#" , title: "SQL"},
+    { href:"#" , title: "TensorFlow"},
+    { href:"#" , title: "Pytorch"},
+    { href:"#" , title: "SckitLearn"},
+    { href:"#" , title: "Mathplotlib"},
+    { href:"#" , title: "Keras"},
+    { href:"#" , title: "Docker"}
 ];
 
-const Skills = ({ ...rest }) => {
+const Canvas = ({ ...rest }) => {
   useEffect(() => {
     console.log('Loading TagCanvas...');
     const TagCanvas = window.TagCanvas;
@@ -53,11 +49,11 @@ const Skills = ({ ...rest }) => {
   }, []);
 
   return (
-      <div className='container'>
+      <div className='container '>
         <canvas
           id='tagcanvas'
           width='820'
-          height='600'
+          height='700'
           style={{
             maxWidth: '1000px',
             width: '100%',
@@ -80,4 +76,4 @@ const Skills = ({ ...rest }) => {
   );
 };
 
-export default Skills;
+export default Canvas;

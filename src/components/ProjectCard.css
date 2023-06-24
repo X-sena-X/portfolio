@@ -1,6 +1,7 @@
 .ProjectContainer{
-    height: 330px;
-    width: 350px;
+    position:relative;
+    height: 320px;
+    width: 330px;
     border-radius: 10px;
 }
 
@@ -11,9 +12,10 @@
 } 
 
 .ProjectContainer:hover .Container2 img{
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .model{
-    height: 330px;
-    width: 350px;
+    height: 320px;
+    width: 330px;
+    cursor: pointer;
 }

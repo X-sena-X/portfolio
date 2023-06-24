@@ -1,12 +1,16 @@
 import React,{ useRef, useEffect } from 'react';
 import './Home.css';
-import Skills from './Skills';
 import VerticalTimeline from '../components/TimeLine';
 import { motion } from "framer-motion";
-import Grid from '@mui/material/Grid';
 import ProjectCard from '../components/ProjectCard';
+import tensor from '../assets/TensorFlow_logo.png';
+import image2 from '../assets/Project3.png';
+import Canvas from './Skills';
+import SkillCard from '../components/SkillCard';
+import react from '../assets/react_logo.png';
+import pytorch from '../assets/pytorch_logo.png';
+import apache from "../assets/apacheAirflow_logo.png";
 function HomePage(){
-    
 
     return(
         <>
@@ -49,14 +53,49 @@ function HomePage(){
                     </div>
                     
                 </div>
-                <div className='Section4 h-fit mt-64'>
-                    <Grid id='MagicWall' container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                        {Array.from(Array(6)).map((_, index) => (
-                            <Grid item xs={2} sm={4} md={4} key={index}>
-                                <ProjectCard/>
-                            </Grid>
-                        ))}
-                    </Grid>
+                <div className='Section4 mt-64 flex justify-items-center flex-col text-center'>
+                <motion.span className='Section4Heading text-8xl font-bold h-56'
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView="visible"
+                        viewport={{once:true}}
+                        transition={{ duration: 0.8 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1}
+                        }}
+                    > PROJECTS </motion.span>
+                    <div className="fade-in-section grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 pl-10 grid-flow-row pb-48 " id="MagicWall">
+                        <ProjectCard image={image2} title="A Learning Site"/>
+                        <ProjectCard image={image2} title="A Learning Site"/>
+                        <ProjectCard image={image2} title="A Learning Site"/>
+                        <ProjectCard image={image2} title="A Learning Site"/>
+                        <ProjectCard image={image2} title="A Learning Site"/>
+                        <ProjectCard image={image2} title="A Learning Site"/>
+                    </div>
+                </div>
+
+                <div className="Section5 h-fit pt-10 text-center">
+                    
+                    <motion.span className='Section5Heading text-8xl font-bold h-56 text-white'
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView="visible"
+                        viewport={{once:true}}
+                        transition={{ duration: 0.8 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1}
+                        }}
+                    > SKILLS </motion.span>
+                    <div className='flex flex-row mt-28'> 
+                   
+                        <div className="SkillContainer grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2">
+                            <SkillCard image={tensor}/>
+                            <SkillCard image={react}/>
+                            <SkillCard image={pytorch}/>
+                            <SkillCard image={apache}/>
+                        </div>
+                        <div className="tagCanvas h-max  bg-black">
+                            <Canvas/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -65,3 +104,13 @@ function HomePage(){
 }
 
 export default HomePage;
+
+/*grid-flow-row auto-rows-max
+<Grid id='MagicWall' container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+{Array.from(Array(6)).map((_, index) => (
+    <Grid item xs={2} sm={4} md={4} key={index}>
+        <ProjectCard image={image2} title="A Learning Site"/>
+    </Grid>
+))}
+</Grid>
+*/
