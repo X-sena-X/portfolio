@@ -10,6 +10,7 @@ import SkillCard from '../components/SkillCard';
 import react from '../assets/react_logo.png';
 import pytorch from '../assets/pytorch_logo.png';
 import apache from "../assets/apacheAirflow_logo.png";
+import ContactForm from '../components/ContactForm';
 function HomePage(){
 
     return(
@@ -19,14 +20,33 @@ function HomePage(){
                     <p className='text-xs text-pink-200'>PORTFOLIO@2023</p>
                </div>
                 <div className='NameContainer ml-32 mt-64 h-auto'>
-                    <p className='text-8xl text-yellow-400 font-bold h-28'>Hi I'am Sena</p>
-                    <p className='text-2xl pt-8 text-indigo-700'>Deep Learning maven | Web Developer</p>
+                    <div className='flex flex-row'>
+                        <div className="image-background">
+                            <p className='text-8xl font-bold h-28'>Hi I'am</p>
+                        </div>
+                        <div >
+                            <p className='text-8xl text-yellow-400 font-bold h-32'> Sena</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <p className='text-2xl pt-8 text-white'>Deep Learning maven | Web Developer</p>
 
                 </div>
-                <div className='Section2 w-screen flex flex-col justify-items-center h-fit mb-80'>
-                    <span className='text-6xl font-bold text-center' >So, who am I?</span>
+                <div className='Section2 w-screen flex flex-col justify-items-center h-fit mb-80 text-white'>
+                    <motion.div className="image-background2 flex w-screen h-48 items-center justify-center"
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView="visible"
+                        viewport={{once:true}}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1}
+                    }}>
+                        <p className='text-6xl font-bold text-center h-32' >So, who am I?</p>
+                    </motion.div>
+                    
                     <div className='Section2TextBox text-center mt-5'>
-                        <p className='text-base font-medium text-center flex-wrap leading-6'>I am wizard who can bring your ideas to life in modern World. I like to play with data .
+                        <p className='text-base font-medium text-center flex-wrap leading-6 text-white'>I am wizard who can bring your ideas to life in modern World. I like to play with data .
                             i am an accomplished machine learning engineer with a strong passion for cutting-edge 
                             technology and continuous learning. through self-directed study and hands-on projects, 
                             I have honed my skills in the realm of machine learning, delving into complex algorithms 
@@ -38,23 +58,25 @@ function HomePage(){
                     </div>
                 </div>
                 < div className='Section3 flex justify-items-center flex-col text-center'>
-                    <motion.span className='Section3Heading text-8xl font-bold h-72 '
+                    
+                    <motion.div className="image-background2 flex w-screen h-80 items-center justify-center"
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView="visible"
                         viewport={{once:true}}
                         transition={{ duration: 0.5 }}
                         variants={{
                             visible: { opacity: 1, scale: 1}
-                        }}
-                    > My journey</motion.span>
+                    }}>
+                        <p className='text-8xl font-bold text-center ' >My journey</p>
+                    </motion.div>
                     <div className="TimeLineContainer mt-24"
                     >
-                        <VerticalTimeline />
+                       <VerticalTimeline/>
                     </div>
                     
                 </div>
                 <div className='Section4 mt-64 flex justify-items-center flex-col text-center'>
-                <motion.span className='Section4Heading text-8xl font-bold h-56'
+                <motion.span className='Section4Heading text-8xl font-bold h-56 text-white'
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView="visible"
                         viewport={{once:true}}
@@ -92,10 +114,20 @@ function HomePage(){
                             <SkillCard image={pytorch}/>
                             <SkillCard image={apache}/>
                         </div>
-                        <div className="tagCanvas h-max  bg-black">
-                            <Canvas/>
-                        </div>
+                        
                     </div>
+                </div>
+                <div className="Section6 h-fit pt-10 text-center items-center justify-center flex flex-col">
+                <motion.span className='Section5Heading text-8xl font-bold h-56 text-white'
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView="visible"
+                        viewport={{once:true}}
+                        transition={{ duration: 0.8 }}
+                        variants={{
+                            visible: { opacity: 1, scale: 1}
+                        }}
+                    > CONTACT ME </motion.span>
+                    <ContactForm/>
                 </div>
             </div>
 

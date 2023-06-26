@@ -1,0 +1,29 @@
+
+.MuiInputBase-input{
+    background-color: white !important;
+    color:blue;
+}
+
+.MuiTextField-root{
+    text-decoration: blue;
+    color:blue;
+    
+}
+
+.MuiInputBase-inputMultiline{
+    background-color: white !important;
+    width: 200px;
+}
+
+.muiTextBox{
+    background-color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline{
+    background-color: white;
+}
+
+.SubmitButton{
+    width:200px !important;
+    background-color: blue !important;
+}

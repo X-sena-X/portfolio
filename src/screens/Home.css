@@ -1,10 +1,33 @@
+
 .MainContainer{
     display: flex;
     width: calc(100vh - 150px)px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+
+    background-color: black;
     
 }
+.image-background {
+    width:350px;
+    color: transparent;
+  }
+
+ .image-background > p{
+    background: linear-gradient(45deg,rgb(103, 57, 212), rgb(62, 7, 61));
+    background-clip: text;
+    -webkit-background-clip: text;
+ } 
+
+.image-background2{
+    width:700px;
+    height:100px;
+    color: transparent;
+ }
+
+ .image-background2 > p{
+    background: linear-gradient(45deg,rgb(103, 57, 212), rgb(62, 7, 61));
+    background-clip: text;
+    -webkit-background-clip: text;
+ } 
 
 .Section2{
     margin-top:55vh;
@@ -25,9 +48,15 @@
 }
 .TimeLineContainer{
     height: calc(100vh-450px)px;
+    scrollbar-width: none;
     scroll-behavior: smooth;
-    
 }
+
+
+.TimeLineContainer::-webkit-scrollbar{
+    display: none;
+}
+
 .Section4{
     height: max-content;
 }
@@ -46,6 +75,3 @@
     }
 }
 
-.Section5{
-    background-color: black;
-}

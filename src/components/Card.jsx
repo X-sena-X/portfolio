@@ -2,10 +2,7 @@ import React from 'react';
 import { useAnimation, motion } from "framer-motion";
 import "./Card.css";
 
-const squareVariants = {
-    visible: { opacity: 1, scale: 4, transition: { duration: 1 } },
-    hidden: { opacity: 0, scale: 0 }
-  };
+
 const Card=(props)=>{
     return(
         <motion.div 

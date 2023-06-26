@@ -61,13 +61,13 @@ const VerticalTimeline = () => {
   }, []);
   
   return (
-    <div id="sena" ref={scrollRef}>
+    <div id="sena" ref={scrollRef} style={{backgroundColor:'black'}}>
       <Chrono
         mode="VERTICAL_ALTERNATING"
         borderLessCards="true"
         hideControls="true"
         focusActiveItemOnLoad="true"
-        title=""
+        title="hwllo"
         activeItemIndex={1}
       >
         {CardList}

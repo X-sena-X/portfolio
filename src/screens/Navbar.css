@@ -4,13 +4,14 @@
 }
 .NavContainer{
     left: 0;
-    display: flex;
-    flex-direction: column;
-    width:150px;
+
+    width:161px;
     list-style: none;
-    border-right: solid 3px rgb(59, 153, 211);
+    background-color: black;
 }
 .SectionContainer ul li{
-    border-top: solid 3px rgb(59, 153, 211);
-    border-bottom: solid 3px rgb(59, 153, 211);
+    width: 115px;
+    height:50px;
+    border-radius: 30px;
+    margin-left: 7px;
 }
