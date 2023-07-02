@@ -39,3 +39,6 @@ input[type=number] {
     appearance: textfield;
   -moz-appearance: textfield;
 }
+.MuiButton-root {
+    background-color: rgb(106, 2, 85) !important;
+}

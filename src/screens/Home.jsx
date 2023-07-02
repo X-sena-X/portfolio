@@ -74,7 +74,7 @@ function HomePage() {
         </Element>
         <Element
           id="Section3"
-          className=" flex  flex-col text-center  "
+          className=" flex  flex-col text-center"
         >
           <motion.div
             className="image-background2 flex w-auto h-52 items-center justify-center"
@@ -126,19 +126,19 @@ function HomePage() {
         </Element>
 
         <Element id="Section5" className=" h-fit pt-10 text-center">
-          <motion.span
-            className="Section5Heading text-8xl font-bold h-56 text-white"
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            variants={{
-              visible: { opacity: 1, scale: 1 },
-            }}
-          >
-            {" "}
-            SKILLS{" "}
-          </motion.span>
+            <motion.div
+                className="image-background2 flex w-auto h-36 items-center justify-center"
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                visible: { opacity: 1, scale: 1 },
+                }}
+            >
+                <p className="text-9xl font-bold justify-self-center overflow-hidden">SKILL</p>
+            </motion.div>
+          
           <div className="flex flex-row mt-28 items-center justify-center">
             <div className="SkillContainer grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 lg:gap-2 md:gap-1">
               <SkillCard image={tensor} />
@@ -154,19 +154,18 @@ function HomePage() {
           id="Section6"
           className=" h-fit mt-20 text-center items-center justify-center flex flex-col"
         >
-          <motion.span
-            className="Section5Heading text-8xl font-bold h-56 text-white"
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            variants={{
-              visible: { opacity: 1, scale: 1 },
-            }}
-          >
-            {" "}
-            CONTACT ME{" "}
-          </motion.span>
+                <motion.div
+                className="image-background2 flex w-auto h-52 items-center justify-center"
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                visible: { opacity: 1, scale: 1 },
+                }}
+            >
+                <p className="text-7xl font-bold justify-self-center overflow-hidden">CONTACT ME</p>
+            </motion.div>
           <ContactForm />
         </Element>
       </div>

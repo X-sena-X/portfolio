@@ -80,8 +80,7 @@ export default function ContactForm() {
           </div>
         </div>
         
-            <Button variant="contained" className="SubmitButton">Contained</Button>
-        
+            <Button variant="contained" className="SubmitButton h-16 w-20">Submit</Button>
       </Box>
     </>
   );

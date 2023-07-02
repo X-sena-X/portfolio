@@ -76,6 +76,7 @@ const VerticalTimeline = () => {
         focusActiveItemOnLoad="true"
         title="hwllo"
         activeItemIndex={1}
+        backgroundColor="black"
       >
         {CardList}
       </Chrono>
