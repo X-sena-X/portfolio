@@ -9,10 +9,22 @@ function Navbar(){
             <img src="#" alt="logo" className='self-center w-10 h-10 rounded-full mx-4'/>
             <div className="SectionContainer mt-20 justify-center items-center">
                 <ul className='inline-flex-col justify-items-center text-center items-center'>
-                    <li className=' text-white cursor-pointer mt-7 '>Home</li>
-                    <li className=' text-white cursor-pointer mt-7'>About</li>
-                    <li className=' text-white cursor-pointer mt-7'>Experience</li>
-                    <li className=' text-white cursor-pointer mt-7'>Contact Me</li>
+                    <li className=' text-white cursor-pointer mt-7 ' onClick={()=>{
+                        const anchor = document.querySelector('#NameContainer')
+                        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }}>Home</li>
+                    <li className=' text-white cursor-pointer mt-7' onClick={()=>{
+                        const anchor = document.querySelector('#Section2')
+                        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }}>About</li>
+                    <li className=' text-white cursor-pointer mt-7' onClick={()=>{
+                        const anchor = document.querySelector('#Section4')
+                        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }}>Experience</li>
+                    <li className=' text-white cursor-pointer mt-7' onClick={()=>{
+                        const anchor = document.querySelector('#Section6')
+                        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }}>Contact Me</li>
                 </ul>
             </div>
             <div className="SocialSection mt-14 ">

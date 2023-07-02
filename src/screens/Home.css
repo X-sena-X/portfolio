@@ -29,21 +29,21 @@
     -webkit-background-clip: text;
  } 
 
-.Section2{
+#Section2{
     margin-top:55vh;
     white-space: initial;
   
     align-self: center;
 }
 
-.Section2 .Section2TextBox{
+#Section2 .Section2TextBox{
     width:950px;
     align-self: center;
     
 }
 
 
-.Section3{
+#Section3{
     height: 120vh;
 }
 .TimeLineContainer{
@@ -57,7 +57,7 @@
     display: none;
 }
 
-.Section4{
+#Section4{
     height: max-content;
 }
 #MagicWall{
@@ -67,7 +67,9 @@
 .tagCanvas{
     width: 700px;
 }
-
+.sectionTitle{
+    line-height: 2.5rem;
+}
 
 @media only screen and (max-width: 800px){
     .tagCanvas{

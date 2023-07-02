@@ -10,7 +10,6 @@
     position:absolute;
     display: flex;
     background: transparent;
-    cursor: pointer;
 } 
 
 .ProjectContainer:hover .Container2 img{
@@ -21,10 +20,6 @@
     width: 330px;
     
 }
-.circle{
-    cursor: pointer;
-}
-
 @keyframes circle-in-center {
     from {
       clip-path: circle(0%);

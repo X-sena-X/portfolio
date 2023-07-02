@@ -4,15 +4,22 @@ import { motion } from "framer-motion";
 import Card from "./Card";
 
 const CardList = [
-  <Card title="TITLE 2" para="This is the first custom card" />,
+  <Card title="Self Study Phase" para="After Completing my schooling, I started to find the architecture of websites and their built Fascinating.
+  At this point, I decided to study how to build a fully flexed website works. Then I got to know about FrontEnd and backend of websites." />,
 
-  <Card title="TITLE 1" para="This is the second custom Card" />,
-  <Card title="TITLE 2" para="This is the first custom card" />,
+  <Card title="DIVE INTO MY FIRST WEBPAGE" para="I saw some youtube videos to have a good understanding of it. Then I took a Udemy course called 'Web Development Bootcamp' by an instructor 
+    to have a Systematic Study plan. Here I learned HTML, CSS, and Javascript" 
+    />,
 
-  <Card title="TITLE 1" para="This is the second custom Card" />,
-  <Card title="TITLE 2" para="This is the first custom card" />,
+  <Card title="Time for improvment" para="
+  swiftly gravitated towards React, finding its innovative framework truly captivating. Within a mere two months, I diligently immersed myself in mastering React, while concurrently gaining 
+  proficiency in Node.js and Express.js for comprehensive full-stack development" />,
 
-  <Card title="TITLE 1" para="This is the second custom Card" />
+  <Card title="Build blocks of ML" para="During this time I saw the potential of ML and DL growth in Technologies and services.
+  I started to learn ML algorithm and got so fascinated by there mathematical approach and within a month started learning neural networks." />,
+
+  <Card title="Insight Of future"  para="Got to experience how neural network algorithms CNN and RNN. Then NLP, computer vision." />,
+
 
 
 ]

@@ -11,7 +11,7 @@ function ProjectCard(props){
             <div className="Container2">
                 <div className='model bg-transparent justify-center hidden items-center text-center '>
                    
-                    <a className='circle block w-20 h-20 rounded-full text-center content-center  bg-white ' href="https://github.com/X-sena-X/crackube">Open</a>
+                    <a className='circle block w-20 h-20 rounded-full text-center justify-center bg-black text-red-600 ' href="https://github.com/X-sena-X/crackube"><p className='text-red-600 mt-4 cursor-pointer'> Source Code </p> </a>
                     
                 </div>  
                 <img src={props.image} alt="Project"/>

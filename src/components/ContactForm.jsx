@@ -74,18 +74,7 @@ export default function ContactForm() {
               inputProps={{ className: "muiTextBox" }}
             />
             <div className="col-span-2">
-                 <TextField
-                required
-                id="filled-number"
-                label="Number"
-                type="number"
-                InputLabelProps={{
-                    shrink: true,
-                    className: "muiTextBox",
-                }}
-                variant="filled"
-                inputProps={{ className: "muiTextBox"}}
-                />
+                 <textarea rows= "10" cols= "70" name="message" placeholder="Write your thoughts..." className="px-2 py-2"/>
             </div>
            
           </div>

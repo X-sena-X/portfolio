@@ -16,9 +16,9 @@ const Card=(props)=>{
                 hidden: { opacity: 0, scale: 0,x: 200 }
             }}
         >
-            <div className='cards'>
+            <div className='cards flex flex-col text-center justify-center'>
                 
-                <h3>{props.title}</h3>
+                <p className='flex text-3xl mb-10 text-orange-500'>{props.title}</p>
                 <p>{props.para}</p>
             </div>
            
