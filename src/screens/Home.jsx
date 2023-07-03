@@ -113,13 +113,14 @@ function HomePage() {
             className="fade-in-section grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 pl-10 grid-flow-row pb-48 "
             id="MagicWall"
           >
-            <ProjectCard image={image2} title="Ecommerce Website" />
-            <ProjectCard image={image2} title="Online Learning Platform" />
-            <ProjectCard image={image2} title="A Learning Site" />
-            <ProjectCard image={image4} title="Face detection Model" />
+            <ProjectCard image={image2} title="Ecommerce Website" link="https://www.google.com"/>
+            <ProjectCard image={image2} title="Online Learning Platform" link="https://github.com/X-sena-X/crackube"/>
+            <ProjectCard image={image2} title="A Learning Site" link="https://www.google.com"/>
+            <ProjectCard image={image4} title="Face detection Model" link="https://github.com/X-sena-X/DataScience_Projects-/tree/main/Face%20recognition" />
             <ProjectCard
               image={image5}
               title="NLP model for sentiment analysis"
+              link ="https://github.com/X-sena-X/DataScience_Projects-/tree/main/Twitter%20Sentiment%20Analysis"
             />
             <ProjectCard image={image6} title="Netflix Recommendation System" />
           </div>

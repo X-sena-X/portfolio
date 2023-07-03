@@ -7,19 +7,22 @@
 }
 
 .ProjectContainer:hover .model{
-    cursor:pointer;
-    position: absolute;
+    position: fixed;
     display: flex;
     background: transparent;
+    transition: ease-in-out 0.5ms;
+
 } 
 
 .ProjectContainer:hover .Container2 img{
     opacity: 0.2;
+    
 }
 
 .model{
     height: 320px;
     width: 330px;
+    z-index: 100;
     
 }
 .circle{
