@@ -24,8 +24,7 @@
 }
 
 .SubmitButton{
-    width:200px !important;
-    background-color: blue !important;
+    background-color: rgb(144, 7, 117) !important;
 }
 
 input::-webkit-outer-spin-button,
@@ -38,7 +37,4 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     appearance: textfield;
   -moz-appearance: textfield;
-}
-.MuiButton-root {
-    background-color: rgb(106, 2, 85) !important;
 }

@@ -20,7 +20,7 @@ import { Element } from "react-scroll";
 function HomePage() {
   return (
     <>
-      <div className="MainContainer ml-40 flex-col ">
+      <div className="MainContainer ml-40 flex-col prevent-select ">
         <div className="watermark float-left">
           <p className="text-xs text-pink-200">PORTFOLIO@2023</p>
         </div>
