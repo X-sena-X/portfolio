@@ -27,7 +27,7 @@ function HomePage() {
         <div id="NameContainer" className=" ml-32 mt-64 h-auto">
           <div className="flex flex-row">
             <div className="image-background">
-              <p className="text-8xl font-bold h-28">Hi I'am</p>
+              <p className="text-8xl font-bold h-28">Hi I'm</p>
             </div>
             <div>
               <p className="text-8xl text-yellow-400 font-bold h-32"> Sena</p>
