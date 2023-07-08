@@ -86,7 +86,7 @@ function Navbar() {
             <ul className="flex flex-row">
               <li className="mx-2 w-7 h-7 text-white">
                 <a
-                  href="https://www.google.com"
+                  href="https://github.com/x-sena-x"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -94,7 +94,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="mx-2 w-7 h-7 text-blue-500">
-                <a href="https://www.google.com">
+                <a href="https://www.linkedin.com/in/senaabhishek/">
                   <LinkedInIcon />
                 </a>
               </li>
