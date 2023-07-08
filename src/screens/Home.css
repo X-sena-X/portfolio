@@ -9,7 +9,7 @@
 .image-background {
     width:350px;
     color: transparent;
-  }
+}
 
  .image-background > p{
     background: linear-gradient(45deg,rgb(103, 57, 212), rgb(62, 7, 61));
@@ -37,7 +37,7 @@
 }
 
 #Section2 .Section2TextBox{
-    width:950px;
+    width:85vw;
     align-self: center;
     
 }
@@ -71,9 +71,14 @@
     line-height: 2.5rem;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
     .tagCanvas{
         display: none;
     }
+    
+    
+}
+@media only screen and (min-width: 1024px){
+    
 }
 

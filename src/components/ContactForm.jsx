@@ -131,7 +131,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xqkvzolq");
 
   return (
-    <form onSubmit={handleSubmit} className="mb-20">
+    <form onSubmit={handleSubmit} className="mb-20 mx-8">
       
       <div className="input flex items-center justify-center">
         <div className="fade-in-section grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-2  grid-flow-row  gap-4">

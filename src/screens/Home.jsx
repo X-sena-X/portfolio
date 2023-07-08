@@ -20,18 +20,18 @@ import { Element } from "react-scroll";
 function HomePage() {
   return (
     <>
-      <div className="MainContainer ml-40 flex-col prevent-select ">
+      <div className="MainContainer ml-0 lg:ml-40 flex-col prevent-select ">
         <div className="watermark float-left">
           <p className="text-xs text-pink-200">PORTFOLIO@2023</p>
         </div>
-        <div id="NameContainer" className=" ml-32 mt-64 h-auto">
+        <div id="NameContainer" className="ml-4 lg:ml-32 mt-64 h-auto">
           <div className="flex flex-row">
             <div className="image-background">
               <p className="text-8xl font-bold h-28">Hi I'm</p>
             </div>
-            <div>
-              <p className="text-8xl text-yellow-400 font-bold h-32"> Sena</p>
-            </div>
+            
+              <p className="text-8xl text-yellow-400 font-bold h-32 -ml-20"> Sena</p>
+            
           </div>
 
           <p className="text-2xl pt-8 text-white">
@@ -141,7 +141,7 @@ function HomePage() {
             </motion.div>
           
           <div className="flex flex-row mt-28 items-center justify-center">
-            <div className="SkillContainer grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 lg:gap-2 md:gap-1">
+            <div className="SkillContainer grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 lg:gap-2 md:gap-1 items-center justify-center">
               <SkillCard image={tensor} />
               <SkillCard image={react} />
               <SkillCard image={pytorch} />
